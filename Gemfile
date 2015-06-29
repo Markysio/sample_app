@@ -19,7 +19,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3', '1.3.10'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails', '3.3.2'
   # The following optional lines are part of the advanced setup.
   # gem 'guard-rspec', '2.5.0'
   # gem 'spork-rails', '4.0.0'
@@ -29,7 +29,7 @@ end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '2.4.4'
   gem 'factory_girl_rails', '4.2.0'
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
@@ -47,10 +47,10 @@ group :test do
 end
 
 group :doc do
-  gem 'sdoc', '0.3.20', require: false
+  gem 'sdoc', '0.4.1', require: false
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg', '0.18.2'
   gem 'rails_12factor', '0.0.2'
 end
