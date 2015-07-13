@@ -14,6 +14,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sprockets', '~> 3.2.0'
+gem 'rake', '10.4.2'
 
 group :development, :test do
   gem 'byebug'
