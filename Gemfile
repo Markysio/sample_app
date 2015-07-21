@@ -16,6 +16,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sprockets', '~> 3.2.0'
 gem 'rake', '10.4.2'
 gem 'its'
+gem 'rspec-expectations', '3.3.0'
+gem 'faker', '1.1.2'
 
 group :development, :test do
   gem 'byebug'
@@ -23,6 +25,7 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3', '1.3.10'
   gem 'rspec-rails', '3.3.2'
+  #gem "rspec-rails", '~> 2.14.0.rc1'     
   gem 'guard-rspec', '4.6.0'
   gem 'spork', github: 'sporkrb/spork'
   gem 'spork-rails'
