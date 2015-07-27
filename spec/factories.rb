@@ -7,6 +7,12 @@ FactoryGirl.define do
 
     factory :admin do
       admin true
+    
     end
+  end
+
+  factory :micropost do
+  	content "Kaki Makaki"
+  	user
   end
 end
