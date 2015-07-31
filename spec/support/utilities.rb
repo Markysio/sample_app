@@ -2,7 +2,7 @@ include ApplicationHelper
 
 def sign_in(user, options={})
   if options[:no_capybara]
-    # Sign in when not using Capybara.
+    # Sign in when not using Capybara as well.
     remember_token = User.new_remember_token
     cookies[:remember_token] = remember_token
     user.update_attribute(:remember_token, User.encrypt(remember_token))
@@ -13,7 +13,6 @@ def sign_in(user, options={})
     click_button "Sign in"
   end
 end
-
 
 RSpec::Matchers.define :have_error_message do |message|
   match do |page|

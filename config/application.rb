@@ -34,5 +34,6 @@ module SampleApp
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     I18n.enforce_available_locales = true
+    config.assets.initialize_on_precompile = true
   end
 end
